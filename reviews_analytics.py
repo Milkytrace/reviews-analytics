@@ -19,3 +19,10 @@ for d in data:
 	if len(d) < 100:
 		filter.append(d)
 print('總共有',len(filter),'筆留言長度小於100\n')
+
+good = []
+for d in data:
+	if 'excellent' in d:
+		good.append(d)
+print('總共有',len(good),'筆留言含有 excellent這個詞')
+
