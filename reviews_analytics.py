@@ -26,3 +26,7 @@ for d in data:
 		good.append(d)
 print('總共有',len(good),'筆留言含有 excellent這個詞')
 
+nasty = [m for m in data if 'nasty' in m]
+print('其中有',len(nasty),'條留言有 nasty 這個詞')
+print(nasty[7])
+
